@@ -3,7 +3,7 @@
 const amigoinp = document.getElementById("amigo");
 const listar = document.getElementById("listaAmigos");
 const resultado = document.getElementById("resultado");
-const arrAmigo = [];
+let arrAmigo = [];
 let encon = false;
 let amigoSor = "";
 
@@ -12,7 +12,7 @@ function agregarAmigo() {
     var valam = amigoinp.value;
     var li = document.createElement('li');
     if (valam) {
-
+          limpiarLi('resultado');
         encon = arrAmigo.includes(valam);
         if (encon) {
             alertas("Ya se encuentra este amigo en el App.");
@@ -40,7 +40,8 @@ function sortearAmigo() {
     li.textContent = amigoAle;
     li.value = amigoAle;
     resultado.appendChild(li);
-
+    arrAmigo = [];
+    limpiarLi('listaAmigos');
     console.log(amigoAle);
 }
 
@@ -52,4 +53,13 @@ function elegirAmigo(array) {
 function alertas(msg) {
     alert(msg);
 };
+
+limpiarLi = (idd) => {
+const lista = document.getElementById(idd);
+// Elimina todos los <li> directamente
+while (lista.firstChild) {
+  lista.removeChild(lista.firstChild);
+}
+}
+
 
