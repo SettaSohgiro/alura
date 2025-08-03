@@ -1,6 +1,4 @@
-## :hammer:Funcionalidades del proyecto
+## :hammer:aplicacion de sorteo Amigo Secreto
 
-- `Funcionalidad 1`: descripción de la funcionalidad 
-1- `Funcionalidad 2`: descripción de la funcionalidad 
-2- `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 
-2- `Funcionalidad 3`: descripción de la funcionalidad 3
+- `Funcionalidad 1`: Se agrega amigos a un array para que puedan ser sorteados
+- `Funcionalidad 2`: boton para ejecutar el sorteo y saldra el resultado 
